@@ -50,7 +50,6 @@ if uid == 0:
                 exit()
             case _:
                 print("opción incorrecta")
-                exit()
 else:
     print("Error no eres root")
 
