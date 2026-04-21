@@ -28,7 +28,7 @@ while True:
             for i in ficheros:
                 nombref = os.path.basename(i)
                 if nf == nombref:
-                    if os.path.isfile:
+                    if os.path.isfile(i):
                         print("borrando...")
                         os.system("rm "+i)
                         print("hecho")
@@ -43,7 +43,7 @@ while True:
             for i in directorios:
                 nombred = os.path.basename(i)
                 if nd == nombred:
-                    if os.path.isdir:
+                    if os.path.isdir(i):
                         print("mostrando")
                         os.system("ls -l "+i)
                         contador = contador + 1
