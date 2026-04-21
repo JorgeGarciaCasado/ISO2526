@@ -30,7 +30,7 @@ while True:
                 if nf == nombref:
                     if os.path.isfile(i):
                         print("borrando...")
-                        os.remove(i)
+                        os.system("rm "+i)
                         print("hecho")
                         contador = contador + 1
                     else:
@@ -41,7 +41,8 @@ while True:
             nd = input("Dime el nombre del directorio ")
             contador = 0
             for i in directorios:
-                if os.path.exists(i):
+                nombred = os.path.basename(i)
+                if nd == nombred:
                     if os.path.isdir(i):
                         print("mostrando")
                         os.system("ls -l "+i)
